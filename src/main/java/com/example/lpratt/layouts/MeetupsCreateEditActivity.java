@@ -20,9 +20,9 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (savedInstanceState.getString("mode").equals("create")) {
-            setTitle("Meetups: Create ");
-        } else if (savedInstanceState.getString("mode").equals("create")) {
-            setTitle("Meetups:");
+            setTitle("Meetups: Create Meetup");
+        } else if (savedInstanceState.getString("mode").equals("Edit")) {
+            setTitle("Meetups: Edit Meetup");
         }
 
         setContentView(R.layout.activity_meetups_create_edit);
