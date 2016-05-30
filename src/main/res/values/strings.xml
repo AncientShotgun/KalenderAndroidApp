@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Layouts</string>
+    <string name="button_create">Create Meetup</string>
+    <string name="button_edit">Edit Meetup</string>
 </resources>
