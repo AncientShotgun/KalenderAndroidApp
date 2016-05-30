@@ -14,6 +14,7 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
 
     EditText loc;
     EditText date;
+    EditText desc;
     Spinner importance;
     Button collect;
 
@@ -24,6 +25,7 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
         loc = (EditText)findViewById(R.id.editText_loc);
         date = (EditText)findViewById(R.id.editText_date);
         importance = (Spinner)findViewById(R.id.spinner_importance);
+        desc =(EditText)findViewById(R.id.editText_desc);
         collect =(Button)findViewById(R.id.button_collect);
 
         if (savedInstanceState.getString("mode").equals("create")) {
@@ -50,6 +52,7 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
 
         String locText = loc.getText().toString();
         String dateText = date.getText().toString();
+        String descText = desc.getText().toString();
         String importanceText = (String) importance.getSelectedItem();
 
     }
