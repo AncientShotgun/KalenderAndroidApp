@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -14,18 +15,28 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
     EditText loc;
     EditText date;
     Spinner importance;
+    Button collect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_meetups_create_edit);
+        loc = (EditText)findViewById(R.id.editText_loc);
+        date = (EditText)findViewById(R.id.editText_date);
+        importance = (Spinner)findViewById(R.id.spinner_importance);
+        collect =(Button)findViewById(R.id.button_collect);
 
         if (savedInstanceState.getString("mode").equals("create")) {
             setTitle("Meetups: Create Meetup");
+            collect.setText(R.string.button_create);
         } else if (savedInstanceState.getString("mode").equals("Edit")) {
             setTitle("Meetups: Edit Meetup");
+            collect.setText(R.string.button_edit);
+        } else{
+            setTitle("Meetups: Debug Mode");
+            collect.setText(R.string.button_debug);
         }
 
-        setContentView(R.layout.activity_meetups_create_edit);
         ArrayList<String> importanceList = new ArrayList<>();
         importanceList.add("Unimportant");
         importanceList.add("Important");
