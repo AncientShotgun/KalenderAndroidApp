@@ -11,7 +11,6 @@
         <activity android:name=".MeetupsCreateEditActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <action android:name="com.example.lpratt.MeetupsCreateEditActivity"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

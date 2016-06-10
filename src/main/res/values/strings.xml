@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Meetups: </string>
+    <string name="app_name">Meetups</string>
     <string name="button_create">Create Meetup</string>
     <string name="button_edit">Edit Meetup</string>
     <string name="button_debug">Debug Mode</string>
