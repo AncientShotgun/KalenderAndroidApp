@@ -54,6 +54,11 @@ public class MeetupsCreateEditActivity extends AppCompatActivity {
         String dateText = date.getText().toString();
         String descText = desc.getText().toString();
         String importanceText = (String) importance.getSelectedItem();
+        Bundle result = new Bundle();
+        result.putString("loc",locText);
+        result.putString("date",dateText);
+        result.putString("desc",descText);
+        result.putString("importance",importanceText);
 
     }
 }
